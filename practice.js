@@ -307,7 +307,12 @@ const sayHello = function(greet, name){
 // the second property should be duration with the value of the second parameter
 
 // Code here
-
+const makeExercise = function(exerciseName, duration){
+  return exercise = {
+    exerciseName,
+    duration
+  }
+}
 ////////////////// PROBLEM 25 ////////////////////
 
 // Do not edit the code below.
@@ -319,7 +324,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough() {
-  // Code here
+  if (age > 21){
+   return `old enough`
+  } else {
+    return`not yet`
+  }
 }
 
 ////////////////// PROBLEM 26 ////////////////////
@@ -333,7 +342,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor() {
-  // Code here
+ if(workEthic === 'great'){
+  return `success at DevMountain`
+ }else{
+  return `failure at DevMountain`
+ }
 }
 
 ////////////////// PROBLEM 27 ////////////////////
@@ -347,7 +360,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash() {
-  // Code here
+  if(cookieType === `raisin`){
+    return `throw in trash`
+  }else{
+    return `eat`
+  }
 }
 
 ////////////////// PROBLEM 28 ////////////////////
@@ -362,7 +379,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore() {
-  // Code here
+  if(myTeamScore > yourTeamScore){
+    return `we are the champions`
+  } else{ 
+    return `:(`
+  }
 }
 
 ////////////////// PROBLEM 29 ////////////////////
@@ -380,7 +401,11 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation() {
-  // Code here
+  if(){
+
+  }else if(){
+
+  }else{}
 }
 
 ////////////////// PROBLEM 30 ////////////////////
