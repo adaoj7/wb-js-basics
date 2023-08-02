@@ -68,33 +68,54 @@ const users = [
 // Code here
 const family = {
   Sam: {
-    Hobbies:{
-      Tennis: {}
-    }
-  }
-
-}
+    hobbies: {
+      Tennis: {},
+    },
+  },
+  Adam: {
+    hobbies: {
+      golf: {},
+    },
+  },
+  Missy: {
+    hobbies: {
+      crochet: {},
+    },
+  },
+};
 ////////////////// PROBLEM 9 ////////////////////
 
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
 // Code here
-const gameScores = [[1,2],[3,4],[5,6]]
+const gameScores = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
 ////////////////// PROBLEM 10 ////////////////////
 
 // Create a variable called people which should be an array of 3 objects
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 // Code here
-
+const people = [
+  { name: "Adam", gender: "Male", height: 160 },
+  { name: `Missy`, gender: `Female`, height: 157 },
+  { name: "Caleb", gender: `Male`, height: 148 },
+];
 ////////////////// PROBLEM 11 ////////////////////
 
 // Create a variable called cowboy which should be an object
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
 // Code here
-
+const cowboy = {
+  name: `Adam`,
+  state: `IL`,
+  favoriteCountrySong: `Our song`,
+};
 ////////////////// PROBLEM 12 ////////////////////
 
 // Do not edit the code below.
@@ -120,13 +141,13 @@ function launch() {
 //   the function launch (provided for you)
 
 // Code here
-const dataTypes = [42, `meaning`, true, [1,2,3,4,5], spaceship, launch]
+const dataTypes = [42, `meaning`, true, [1, 2, 3, 4, 5], spaceship, launch];
 ////////////////// PROBLEM 13 ////////////////////
 
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2) {
-  return; // Code here
+  return num1 + num2;
 }
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -134,12 +155,12 @@ function sum(num1, num2) {
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-const number1 = 4
-const number2 = 3
+const number1 = 4;
+const number2 = 3;
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return  number1 * number2; // Code here
+  return number1 * number2;
 }
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -152,7 +173,7 @@ let food = "pizza";
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood() {
-  return; // Code here
+  return "My favorite food is " + food;
 }
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -166,9 +187,10 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name) {
-  // Code here
+  return theBoss = name;
 }
-
+// assignName(theName)
+// console.log(theBoss);
 ////////////////// PROBLEM 17 ////////////////////
 
 // Do not edit the code below.
@@ -183,7 +205,7 @@ const user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj) {
-  return; // Code here
+  return user.name
 }
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -226,7 +248,7 @@ const calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar) {
-  return; // Code here
+  return calendar.weekDays[2]
 }
 
 ////////////////// PROBLEM 19 ////////////////////
@@ -234,7 +256,9 @@ function getWeekDay(calendar) {
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
 // Code here
-
+const fn = function(parameter){
+  return parameter
+}
 ////////////////// PROBLEM 20 ////////////////////
 
 // Do not edit the code below.
@@ -246,19 +270,25 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
-
+function createName(){
+  return firstName + " " + lastName
+}
 ////////////////// PROBLEM 21 ////////////////////
 
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
+function showMeSeven(){
+  return 7
+}
 ////////////////// PROBLEM 22 ////////////////////
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-
+const multiplier = function(num1, num2){
+  return num1 * num2
+}
 ////////////////// PROBLEM 23 ////////////////////
 
 // Create a function called sayHello that takes two parameters: a greeting (string) and a name (string)
@@ -266,7 +296,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-
+const sayHello = function(greet, name){
+  return greet + " " + name
+}
 ////////////////// PROBLEM 24 ////////////////////
 
 // Create a function called makeExercise that takes two parameters: exerciseName (string) and duration (number)
