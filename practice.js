@@ -5,8 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
-const greeting = "Hi"
-const farwell = 'Goodbye'
+const greeting = "Hi";
+const farewell = "Goodbye";
 ////////////////// PROBLEM 2 ////////////////////
 
 // Make a variable called hello with a data type of a string that says "Hello"
@@ -14,36 +14,36 @@ const farwell = 'Goodbye'
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 // Code here
-const hello = `Hello`
-const userName = `Adam`
-const salutation = `${userName} ${Adam}`
+const hello = `Hello`;
+const userName = `Adam`;
+const salutation = hello + userName;
 ////////////////// PROBLEM 3 ////////////////////
 
 // Create a variable called seven that has a number data type with the value of 7
 
 // Code here
-const seven = 7
+const seven = 7;
 ////////////////// PROBLEM 4 ////////////////////
 
 // Make a variable called money with a value equal to the amount you wish to have in your bank account in 2 years
 // This datatype should be a number
 
 // Code here
-const money = 100000
+const money = 100000;
 ////////////////// PROBLEM 5 ////////////////////
 
 // Make a variable called awesome and give it a value of the boolean data type true
 
 // Code here
-const awesome = true
+const awesome = true;
 ////////////////// PROBLEM 6 ////////////////////
 
 // Do not edit the code below.
-let myCar = 'Jeep';
+let myCar = "Jeep";
 // Do not edit the code above.
 
 // Set the variable myCar to be null
-const myCar = null
+myCar = null;
 // Code here
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -52,7 +52,12 @@ const myCar = null
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
 // Code here
-const users({Adam: 27})
+const users = [
+  { name: "Adam", age: 27 },
+  { name: "Adam", age: 27 },
+  { name: "Adam", age: 27 },
+  { name: "Adam", age: 27 },
+];
 ////////////////// PROBLEM 8 ////////////////////
 
 // Create a variable called family which should be an object
@@ -61,14 +66,21 @@ const users({Adam: 27})
 // Each hobbies property will have a corresponding value which will be an object
 
 // Code here
+const family = {
+  Sam: {
+    Hobbies:{
+      Tennis: {}
+    }
+  }
 
+}
 ////////////////// PROBLEM 9 ////////////////////
 
 // Create a variable called gameScores which should be an array with 3 items in it
 // Each item should be an array with 2 items (numbers) in each array
 
 // Code here
-
+const gameScores = [[1,2],[3,4],[5,6]]
 ////////////////// PROBLEM 10 ////////////////////
 
 // Create a variable called people which should be an array of 3 objects
@@ -87,7 +99,7 @@ const users({Adam: 27})
 
 // Do not edit the code below.
 const spaceship = {
-  fuel: 'liquid hydrogen',
+  fuel: "liquid hydrogen",
   topSpeed: 36000,
   fuelLevel: 100,
   altitude: 0,
@@ -108,7 +120,7 @@ function launch() {
 //   the function launch (provided for you)
 
 // Code here
-
+const dataTypes = [42, `meaning`, true, [1,2,3,4,5], spaceship, launch]
 ////////////////// PROBLEM 13 ////////////////////
 
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
@@ -122,17 +134,18 @@ function sum(num1, num2) {
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-
+const number1 = 4
+const number2 = 3
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return; // Code here
+  return  number1 * number2; // Code here
 }
 
 ////////////////// PROBLEM 15 ////////////////////
 
 // Do not edit the code below.
-let food = 'pizza';
+let food = "pizza";
 // Do not edit the code above.
 
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
@@ -145,7 +158,7 @@ function favFood() {
 ////////////////// PROBLEM 16 ////////////////////
 
 // Do not edit the code below.
-let theName = 'Jeremy';
+let theName = "Jeremy";
 let theBoss;
 // Do not edit the code above.
 
@@ -160,9 +173,9 @@ function assignName(name) {
 
 // Do not edit the code below.
 const user = {
-  name: 'Billy',
+  name: "Billy",
   age: 18,
-  email: 'billy123@billy.com',
+  email: "billy123@billy.com",
 };
 // Do not edit the code above.
 
@@ -178,23 +191,31 @@ function getName(userObj) {
 // Do not edit the code below."
 const calendar = {
   months: [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ],
-  weekDays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+  weekDays: [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ],
   days: [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
-    27, 28, 29, 30, 31,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+    22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
   ],
 };
 // Do not edit the code above.
@@ -217,8 +238,8 @@ function getWeekDay(calendar) {
 ////////////////// PROBLEM 20 ////////////////////
 
 // Do not edit the code below.
-let firstName = 'Indiana';
-let lastName = 'Jones';
+let firstName = "Indiana";
+let lastName = "Jones";
 // Do not edit the code above.
 
 // Create a function called createName that takes in no parameters and returns the result of concatenating firstName and lastName (provided)
@@ -258,7 +279,7 @@ let lastName = 'Jones';
 ////////////////// PROBLEM 25 ////////////////////
 
 // Do not edit the code below.
-let age = 'TBD';
+let age = "TBD";
 // Do not edit the code above.
 
 // Inside the isOldEnough function, write an if/else statement that will return "old enough" if the age variable is greater than 21 and returns "not yet" otherwise
@@ -272,7 +293,7 @@ function isOldEnough() {
 ////////////////// PROBLEM 26 ////////////////////
 
 // Do not edit the code below.
-let workEthic = 'TBD';
+let workEthic = "TBD";
 // Do not edit the code above.
 
 // Inside the successPredictor function, write an if/else statement that will return "success at DevMountain" if the workEthic variable is "great" and returns "failure at DevMountain" otherwise
@@ -286,7 +307,7 @@ function successPredictor() {
 ////////////////// PROBLEM 27 ////////////////////
 
 // Do not edit the code below.
-let cookieType = 'TBD';
+let cookieType = "TBD";
 // Do not edit the code above.
 
 // Inside the eatOrTrash function, write an if/else statement that will return "throw in trash" if the cookieType variable is "raisin" and returns "eat" otherwise
@@ -300,8 +321,8 @@ function eatOrTrash() {
 ////////////////// PROBLEM 28 ////////////////////
 
 // Do not edit the code below.
-let myTeamScore = 'TBD';
-let yourTeamScore = 'TBD';
+let myTeamScore = "TBD";
+let yourTeamScore = "TBD";
 // Do not edit the code above.
 
 // Inside the finalScore function, write an if/else statement that will return "we are the champions" if the myTeamScore variable is greater than the yourTeamScore variable and returns ":(" otherwise
@@ -315,7 +336,7 @@ function finalScore() {
 ////////////////// PROBLEM 29 ////////////////////
 
 // Do not edit the code below.
-age = 'TBD';
+age = "TBD";
 // Do not edit the code above.
 
 // Inside the findCorrectTransportation function, write an if/else statement that will check the age variable and return the correct response according to the following criteria:
@@ -333,8 +354,8 @@ function findCorrectTransportation() {
 ////////////////// PROBLEM 30 ////////////////////
 
 // Do not edit the code below.
-let cash = 'TBD';
-let temp = 'TBD';
+let cash = "TBD";
+let temp = "TBD";
 // Do not edit the code above.
 
 // Inside the doIGetIceCream function, write an if/else statement that will check the cash and temp variables and return the correct response according to the following criteria:
@@ -351,8 +372,8 @@ function doIGetIceCream() {
 ////////////////// PROBLEM 31 ////////////////////
 
 // Do not edit the code below.
-let chores = 'TBD';
-let work = 'TBD';
+let chores = "TBD";
+let work = "TBD";
 // Do not edit the code above.
 
 // Inside the doIHaveFreeTime function, write an if/else statement that return "free time!" if either chores or work are false
@@ -369,8 +390,8 @@ function doIHaveFreeTime() {
 
 // Do not edit the code false.
 let crash = false;
-let currentSpeed = 'TBD';
-let brakes = 'TBD';
+let currentSpeed = "TBD";
+let brakes = "TBD";
 // Do not edit the code above.
 
 // Inside the setCrash function, write an if/else statement that will set the value of crash to true if currentSpeed is "fast" and brakes is false and does nothing otherwise
@@ -388,7 +409,7 @@ function setCrash() {
 
 // Do not edit the code below.
 let user2 = {
-  name: 'Tiffany',
+  name: "Tiffany",
   total: 50,
 };
 // Do not edit the code above.
@@ -409,13 +430,13 @@ var hunger;
 var fatigue;
 
 function eat() {
-  hunger = 'gone';
-  return 'yum yum';
+  hunger = "gone";
+  return "yum yum";
 }
 
 function sleep() {
-  fatigue = 'gone';
-  return 'zzz zzz zzz';
+  fatigue = "gone";
+  return "zzz zzz zzz";
 }
 // Do not edit the code above.
 
