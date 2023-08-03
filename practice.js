@@ -469,9 +469,7 @@ let brakes = "TBD";
 
 function setCrash() {
   if(currentSpeed === `fast` && !brakes){
-    return crash = !crash
-  } else {
-    return null
+    crash = true
   }
 }
 
