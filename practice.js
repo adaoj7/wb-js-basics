@@ -187,7 +187,7 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name) {
-  return theBoss = name;
+  return (theBoss = name);
 }
 // assignName(theName)
 // console.log(theBoss);
@@ -205,7 +205,7 @@ const user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj) {
-  return user.name
+  return user.name;
 }
 
 ////////////////// PROBLEM 18 ////////////////////
@@ -248,7 +248,7 @@ const calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar) {
-  return calendar.weekDays[2]
+  return calendar.weekDays[2];
 }
 
 ////////////////// PROBLEM 19 ////////////////////
@@ -256,9 +256,9 @@ function getWeekDay(calendar) {
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
 // Code here
-const fn = function(parameter){
-  return parameter
-}
+const fn = function (parameter) {
+  return parameter;
+};
 ////////////////// PROBLEM 20 ////////////////////
 
 // Do not edit the code below.
@@ -270,25 +270,25 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
-function createName(){
-  return firstName + " " + lastName
+function createName() {
+  return firstName + " " + lastName;
 }
 ////////////////// PROBLEM 21 ////////////////////
 
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-function showMeSeven(){
-  return 7
+function showMeSeven() {
+  return 7;
 }
 ////////////////// PROBLEM 22 ////////////////////
 
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-const multiplier = function(num1, num2){
-  return num1 * num2
-}
+const multiplier = function (num1, num2) {
+  return num1 * num2;
+};
 ////////////////// PROBLEM 23 ////////////////////
 
 // Create a function called sayHello that takes two parameters: a greeting (string) and a name (string)
@@ -296,9 +296,9 @@ const multiplier = function(num1, num2){
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-const sayHello = function(greet, name){
-  return greet + " " + name
-}
+const sayHello = function (greet, name) {
+  return greet + " " + name;
+};
 ////////////////// PROBLEM 24 ////////////////////
 
 // Create a function called makeExercise that takes two parameters: exerciseName (string) and duration (number)
@@ -307,12 +307,12 @@ const sayHello = function(greet, name){
 // the second property should be duration with the value of the second parameter
 
 // Code here
-const makeExercise = function(exerciseName, duration){
-  return exercise = {
+const makeExercise = function (exerciseName, duration) {
+  return (exercise = {
     exerciseName,
-    duration
-  }
-}
+    duration,
+  });
+};
 ////////////////// PROBLEM 25 ////////////////////
 
 // Do not edit the code below.
@@ -324,10 +324,10 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough() {
-  if (age > 21){
-   return `old enough`
+  if (age > 21) {
+    return `old enough`;
   } else {
-    return`not yet`
+    return `not yet`;
   }
 }
 
@@ -342,11 +342,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor() {
- if(workEthic === 'great'){
-  return `success at DevMountain`
- }else{
-  return `failure at DevMountain`
- }
+  if (workEthic === "great") {
+    return `success at DevMountain`;
+  } else {
+    return `failure at DevMountain`;
+  }
 }
 
 ////////////////// PROBLEM 27 ////////////////////
@@ -360,10 +360,10 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash() {
-  if(cookieType === `raisin`){
-    return `throw in trash`
-  }else{
-    return `eat`
+  if (cookieType === `raisin`) {
+    return `throw in trash`;
+  } else {
+    return `eat`;
   }
 }
 
@@ -379,10 +379,10 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore() {
-  if(myTeamScore > yourTeamScore){
-    return `we are the champions`
-  } else{ 
-    return `:(`
+  if (myTeamScore > yourTeamScore) {
+    return `we are the champions`;
+  } else {
+    return `:(`;
   }
 }
 
@@ -401,11 +401,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation() {
-  if(){
-
-  }else if(){
-
-  }else{}
+  if (age >= 3 && age <= 7) {
+    return `tricycle`;
+  } else if (age >= 8 && age <= 15) {
+    return `bicycle`;
+  } else {
+    return `car`;
+  }
 }
 
 ////////////////// PROBLEM 30 ////////////////////
@@ -416,14 +418,19 @@ let temp = "TBD";
 // Do not edit the code above.
 
 // Inside the doIGetIceCream function, write an if/else statement that will check the cash and temp variables and return the correct response according to the following criteria:
-// if temp is equal to "hot" and money is true, return "Get Ice Cream!"
+// if temp is equal to "hot" and cash is true, return "Get Ice Cream!"
 // otherwise return "Save up for another day."
 
 // Use the if and else keywords in your solution
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream() {
-  // Code here
+  if(temp === `hot` && cash === true){
+    return `Get Ice Cream!`
+  } else { 
+    return `Save up for another day.`
+  }
+
 }
 
 ////////////////// PROBLEM 31 ////////////////////
@@ -440,7 +447,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime() {
-  // Code here
+  if(!chores || !work){
+    return `free time!`
+  }
 }
 
 ////////////////// PROBLEM 32 ////////////////////
@@ -459,8 +468,13 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash() {
-  // Code here
+  if(currentSpeed === `fast` && !brakes){
+    return crash = !crash
+  } else {
+    return null
+  }
 }
+
 
 ////////////////// PROBLEM 33 ////////////////////
 
@@ -479,7 +493,13 @@ let user2 = {
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
 // Code here
-
+function makePurchase(priceOfItem) {
+  if(priceOfItem <= user2.total){
+    return user2.total -= priceOfItem
+  } else if (priceOfItem > user2.total) {
+    return `not enough funds`
+  }
+}
 ////////////////// PROBLEM 34 ////////////////////
 
 // Do not edit the code below.
@@ -507,3 +527,12 @@ function sleep() {
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
 // Code here
+function decisionMaker(hungry, tired){
+  if(!!hungry && !tired ){
+    return eat()
+  } else if(!hungry && !!tired) {
+    return sleep()
+  } else {
+    return `undecided`
+  }
+}
